@@ -1,0 +1,142 @@
+    1  fdisk -l
+    2  sudo fdisk -l
+    3  sudo fdisk /dev/sdd
+    4  p
+    5  free
+    6  free -h
+    7  sudo mkswap /dev/sdd1
+    8  swapon -s
+    9  free
+   10  sudo swapon /dev/sdd1
+   11  swapon -s
+   12  free
+   13  sudo fdisk /dev/sdc
+   14  p
+   15  v
+   16  exit
+   17  ls -l
+   18  fdisk -l
+   19  sudo fdisk -l
+   20  sudo pvs
+   21  ls -l
+   22  cat /proc/swaps
+   23  fdisk -l
+   24  sudo fdisk /dev/sdd
+   25  free
+   26  free -h
+   27  sudo mkswap /dev/sdd1
+   28  ls -l
+   29  sudo mkswap /dev/sdd1
+   30  fdisk -l
+   31  sudo swapon /dev/sdd1
+   32  free
+   33  sudo fdisk -l
+   34  sudo fdisk /dev/sdc
+   35  pwd
+   36  ls -l
+   37  sudo fdisk -l
+   38  sudo pvs
+   39  sudo wipefs -a /dev/sdd2
+   40  sudo wipefs -a /dev/sdd3
+   41  sudo wipefs -a /dev/sdd5
+   42  sudo wipefs -a /dev/sdd6
+   43  sudo wipefs -a /dev/sdc1
+   44  sudo wipefs -a /dev/sdc2
+   45  sudo pvcreate /dev/sdd2
+   46  sudo pvcreate /dev/sdd3
+   47  sudo pvcreate /dev/sdd5
+   48  sudo pvcreate /dev/sdd6
+   49  sudo pvcreate /dev/sdc1
+   50  sudo pvcreate /dev/sdc2
+   51  pvs
+   52  sudo pvs
+   53  sudo vgcreate vg_datos/dev/sdd1 /dev/sdd2
+   54  sudo vgcreate vgdatos/dev/sdd1 /dev/sdd2
+   55  sudo pvs
+   56  sudo vgcreate vg_datos/dev/sdd1 /dev/sdd2
+   57  exit
+   58  ls -l
+   59  cd ..
+   60  ls -l
+   61  cd vagrant/
+   62  ls -l
+   63  cd ..
+   64  cd ubuntu/
+   65  exit
+   66  ls -l
+   67  cd ..
+   68  ls -l
+   69  qexit
+   70  exit
+   71  ls -l
+   72  ls -la
+   73  cd ..
+   74  ls -la
+   75  cd vagrant/
+   76  ls -la
+   77  sudo disk /dev/sdc
+   78  sudo fdisk /dev/sdc
+   79  sudo fdisk -l /dev/sdd
+   80  sudo pvs
+   81  sudo vgs
+   82  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   83  sudo pvs
+   84  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   85  sudo vgs
+   86  sudo pvs
+   87  sudo vgcreate vg_web /dev/sdc2
+   88  sudo pvs
+   89  sudo lvcreate -L 1G vg_web -n lv_web1
+   90  sudo lvcreate -L 512M vg_web -n lv_web2
+   91  sudo lvcreate -L 512M vg_web -n lv_web3
+   92  sudo lvs
+   93  sudo pvs
+   94  sudo fdisk -l
+   95  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   96  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   97  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   98  pwd
+   99  ls -l
+  100  ls -la
+  101  cat $home /.ssh*.pub
+  102  cat .ssh
+  103  git clone https://github.com/abrilfondevila/TP2_FONDEVILA_CANDELA_113.git
+  104  ls -la
+  105  cd TP2_FONDEVILA_CANDELA_113/
+  106  ls -la
+  107  exit
+  108  ls -l
+  109  cd TP2_FONDEVILA_CANDELA_113/
+  110  ls -la
+  111  cd ..
+  112  ls -la
+  113  cd..
+  114  cd ..
+  115  ls -la
+  116  cd vagrant/
+  117  ls -la
+  118  cd ..
+  119  ls -la
+  120  cd /home/vagrant/TP2_FONDEVILA_CANDELA_113
+  121  ls -la
+  122  cd .git/
+  123  ls -la
+  124  cd ..
+  125  ls -la
+  126  cd .
+  127  ls -la
+  128  pwd
+  129  ls -la
+  130  mkdir repogit
+  131  ls -la
+  132  cd repogit/
+  133  ls -la
+  134  sudo pvs > pvs.txt
+  135  ls -la pvs.txt
+  136  cat pvs.txt 
+  137  pwd
+  138  sudo vgs > vgs.txt
+  139  cat vgs.txt 
+  140  sudo lvs > lvs.txt
+  141  cat lvs.txt 
+  142  history > historial_lvm.txt
